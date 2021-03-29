@@ -31,6 +31,14 @@ module.exports = {
                 "sass-loader"
             ]
 
+        },
+        {
+            test: /\.(jpe?g|gif)$/i,
+            use: [
+                {
+                    loader: 'file-loader'
+                }
+            ]
         }
       ]
     }

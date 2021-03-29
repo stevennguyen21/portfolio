@@ -5,7 +5,7 @@ import Home from './Home.jsx';
 
 const App = () => {
     return (
-        <div className="test">
+        <div className="background">
             <Mainpage />
             <Home />
         </div>
