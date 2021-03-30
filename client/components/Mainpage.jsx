@@ -55,26 +55,26 @@ const Mainpage = () => {
                     <div className="btn-line"></div>
                 </div>
                 <nav className="menu">
-                    <div className="menu-branding">
+                    <div className="menu-branding show">
                         <div className="portrait"></div>
                     </div>
-                    <ul className="menu-nav">
-                        <li className="nav-item">
+                    <ul className="menu-nav show">
+                        <li className="nav-item show current">
                             <a href="/" className="nav-link">
                                 Home
                             </a>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item show">
                             <a href="/about" className="nav-link">
                                 About Me
                             </a>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item show">
                             <a href="/projects" className="nav-link">
                                 Projects
                             </a>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item show">
                             <a href="/contact" className="nav-link">
                                 Contact Me
                             </a>
