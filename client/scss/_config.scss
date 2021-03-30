@@ -29,3 +29,33 @@ $background-opactiy: 0.9;
     
     }
 }
+
+// Media query mixins
+
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        // applies if screen is 500px or less
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        // applies if screen is 768px or less
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        // applies if screen is between 769 and 1170px
+        @content;
+    }
+}
+
+@mixin mediaXL {
+    @media screen and (min-width: 1171px) {
+        // applies if screen is over 1170px
+        @content;
+    }
+}
