@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Mainpage = () => {
     const [showMenu, setMenu] = useState(false);
@@ -64,11 +65,14 @@ const Mainpage = () => {
                                 Home
                             </a>
                         </li>
-                        <li className="nav-item show">
-                            <a href="/about" className="nav-link">
-                                About Me
-                            </a>
-                        </li>
+                        <Link to="/about">
+                            <li className="nav-item show">
+                                <a className="nav-link">
+                                    About Me
+                                </a>
+                            </li>
+
+                        </Link>
                         <li className="nav-item show">
                             <a href="/projects" className="nav-link">
                                 Projects
