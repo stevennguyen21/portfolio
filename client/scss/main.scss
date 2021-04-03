@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 $primary-color: #6700EE;
+$secondary-color: #FF64CB;
 
 body {
     height: 100vh;
@@ -18,9 +19,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    background: gray;
-}
+
 
 section {
     padding: 4em 2em;
@@ -31,6 +30,12 @@ section {
 
 .nav-container {
     background: $primary-color;
+    position: fixed;
+    width: 100%;
+
+    li:hover {
+        color: pink;
+    }
 
     a {
         color: white;
@@ -75,7 +80,7 @@ header {
 
 .meet {
     font-weight: bold;
-    color: #FF64CB;
+    color: $secondary-color;
 }
 
 // About section
@@ -123,6 +128,11 @@ header {
 
 .portfolio {
     background: #F7F7F7;
+}
+
+.project {
+    height: 20em;
+    margin-top: 1em;
 }
 
 /* .portfolio-container a img {
@@ -177,7 +187,7 @@ header {
         background: unset;
 
         header {
-            background: $primary-color
+            background: lighten($primary-color, 10);
         }
     }
 
@@ -189,6 +199,7 @@ header {
         padding: 2em 4em 2em 0;
         
     }
+
 
     section {
         padding: 4em;
@@ -206,6 +217,21 @@ header {
             i {
                 width: 20px;
                 color: black;
+                transition: color 0.2s ease-out;
+            }
+
+            i:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+
+    .scrolling {
+        background: lighten($primary-color, 10);
+
+        ul {
+            i {
+                color: white;
             }
         }
     }

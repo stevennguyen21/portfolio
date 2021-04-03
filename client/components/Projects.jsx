@@ -1,4 +1,7 @@
 import React from 'react';
+import img from '../images/chess.png';
+import vibeify from '../images/vibeify.gif';
+import reviews from '../images/reviews.gif';
 
 const Projects = () => {
     return (
@@ -14,7 +17,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <a href='#'>
-                    {/* image for project */}
+                    <img className="project" src={img} alt="chess" />
                 </a>
             </div>
             <div className="portfolio-container transition3">
@@ -27,7 +30,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <a href='#'>
-                    {/* image for project */}
+                    <img className="project" src={vibeify} alt="vibeify" />
                 </a>
             </div>
             <div className="portfolio-container transition3">
@@ -40,7 +43,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <a href='#'>
-                    {/* image for project */}
+                    <img className="project" src={reviews} alt="reviews" />
                 </a>
             </div>
 
