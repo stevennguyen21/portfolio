@@ -40,6 +40,28 @@ section {
         color: white;
     }
 
+    .logo {
+        margin-right: 10em;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar .max-width {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .navbar .menu li a:hover {
+        color: $secondary-color;
+    }
+
 }
 
 header {
@@ -169,14 +191,51 @@ header {
     .portfolio {
         padding-top: 7em;
     }
+
+    .portfolio img {
+        max-width: 400px;
+        margin-left: 50px;
+    }
     
     
 }
 
-@media only screen and (min-width: 300px) {
-    .menu-btn {
+@media only screen and (max-width: 800px) {
+    .max-width {
+        padding: 0 50px;
+    }
+
+    .nav-container .menu-btn {
+        display: block;
         color: white;
         cursor: pointer;
+        font-size: 2em;
+        z-index: 4;
+        padding-left: 75px;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 4;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .navbar .menu {
+        display: flex;
+        flex-direction: column;
+        padding-top: 200px;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 40px 0;
+        font-size: 1.5rem;
     }
     
     .portfolio img {
@@ -185,9 +244,6 @@ header {
 }
 
 @media only screen and (min-width: 1050px) {
-    .menu-btn {
-        display: none;
-    }
     .hero {
         height: 85vh;
     }

@@ -20,16 +20,17 @@ const Nav = () => {
         return (
             <div className="nav-container">
                 <header>
-                    <div className="logo">Steven Nguyen</div>
-    
-                    <nav className="nav-list">
-                        <ul>
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">My Work</a></li>
-                            <li><a href="#">Contact Me</a></li>
-                        </ul>
-                        <div className="menu-btn">
-                            <i className="fas fa-bars"></i>
+                    <nav className="navbar">
+                        <div className="max-width">
+                            <div className="logo">Steven Nguyen</div>
+                            <ul className="menu">
+                                <li><a href="#">About Me</a></li>
+                                <li><a href="#">My Work</a></li>
+                                <li><a href="#">Contact Me</a></li>
+                            </ul>
+                            <div className="menu-btn">
+                                <i className="fas fa-bars"></i>
+                            </div>
                         </div>
                     </nav>
                 </header>
@@ -60,16 +61,17 @@ const Nav = () => {
         return (
             <div className="nav-container">
                 <header>
-                    <div className="logo">Steven Nguyen</div>
-    
-                    <nav>
-                        <ul>
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">My Work</a></li>
-                            <li><a href="#">Contact Me</a></li>
-                        </ul>
-                        <div className="menu-btn">
-                            <i className="fas fa-bars"></i>
+                    <nav className="navbar">
+                        <div className="max-width">
+                            <div className="logo">Steven Nguyen</div>
+                            <ul className="menu">
+                                <li><a href="#">About Me</a></li>
+                                <li><a href="#">My Work</a></li>
+                                <li><a href="#">Contact Me</a></li>
+                            </ul>
+                            <div className="menu-btn">
+                                <i className="fas fa-bars"></i>
+                            </div>
                         </div>
                     </nav>
                 </header>
