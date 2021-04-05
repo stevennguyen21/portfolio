@@ -22,12 +22,15 @@ const Nav = () => {
                 <header>
                     <div className="logo">Steven Nguyen</div>
     
-                    <nav>
+                    <nav className="nav-list">
                         <ul>
                             <li><a href="#">About Me</a></li>
                             <li><a href="#">My Work</a></li>
                             <li><a href="#">Contact Me</a></li>
                         </ul>
+                        <div className="menu-btn">
+                            <i className="fas fa-bars"></i>
+                        </div>
                     </nav>
                 </header>
     
@@ -65,6 +68,9 @@ const Nav = () => {
                             <li><a href="#">My Work</a></li>
                             <li><a href="#">Contact Me</a></li>
                         </ul>
+                        <div className="menu-btn">
+                            <i className="fas fa-bars"></i>
+                        </div>
                     </nav>
                 </header>
     

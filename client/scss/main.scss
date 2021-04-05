@@ -30,8 +30,7 @@ section {
 
 .nav-container {
     background: $primary-color;
-    position: fixed;
-    width: 100%;
+
 
     li:hover {
         color: pink;
@@ -130,10 +129,10 @@ header {
     background: #F7F7F7;
 }
 
-.project {
-    height: 20em;
-    margin-top: 1em;
-}
+// .project {
+//     height: 20em;
+//     margin-top: 1em;
+// }
 
 /* .portfolio-container a img {
     border-radius: 1em;
@@ -142,7 +141,6 @@ header {
 
 
 @media only screen and (min-width: 800px) {
-
     .about, 
     .portfolio {
         text-align: left;
@@ -171,13 +169,25 @@ header {
     .portfolio {
         padding-top: 7em;
     }
+    
+    
+}
 
-    .portfolio-container img {
-        margin-left: 2em;
+@media only screen and (min-width: 300px) {
+    .menu-btn {
+        color: white;
+        cursor: pointer;
+    }
+    
+    .portfolio img {
+        max-width: 400px;
     }
 }
 
 @media only screen and (min-width: 1050px) {
+    .menu-btn {
+        display: none;
+    }
     .hero {
         height: 85vh;
     }
@@ -185,6 +195,8 @@ header {
         display: grid;
         grid-template-columns: 66% auto;
         background: unset;
+        position: fixed;
+        width: 100%;
 
         header {
             background: lighten($primary-color, 10);
@@ -260,9 +272,15 @@ header {
         width: 100%;
     }
 
+    .portfolio-container {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
     .portfolio img {
         float: right;
-        max-width: 500px;
+        max-width: 600px;
+        max-height: 200px;
     }
 
     .about::before {
