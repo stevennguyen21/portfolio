@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Nav = () => {
     const [sticky, setSticky] = useState(false);
+    const [isActive, setActive] = useState(false);
 
     const listenScrollEvent = (e) => {
         if (window.scrollY > 700) {
@@ -9,6 +10,10 @@ const Nav = () => {
         } else {
             setSticky(false);
         }
+    }
+
+    const handleToggle = () => {
+        setActive(!isActive);
     }
 
     useEffect(() => {
@@ -23,12 +28,12 @@ const Nav = () => {
                     <nav className="navbar">
                         <div className="max-width">
                             <div className="logo">Steven Nguyen</div>
-                            <ul className="menu">
+                            <ul className={`menu ${isActive ? 'active' : ''}`}>
                                 <li><a href="#">About Me</a></li>
                                 <li><a href="#">My Work</a></li>
                                 <li><a href="#">Contact Me</a></li>
                             </ul>
-                            <div className="menu-btn">
+                            <div className="menu-btn" onClick={handleToggle}>
                                 <i className="fas fa-bars"></i>
                             </div>
                         </div>
@@ -64,12 +69,12 @@ const Nav = () => {
                     <nav className="navbar">
                         <div className="max-width">
                             <div className="logo">Steven Nguyen</div>
-                            <ul className="menu">
+                            <ul className={`menu ${isActive ? 'active' : ''}`}>
                                 <li><a href="#">About Me</a></li>
                                 <li><a href="#">My Work</a></li>
                                 <li><a href="#">Contact Me</a></li>
                             </ul>
-                            <div className="menu-btn">
+                            <div className="menu-btn" onClick={handleToggle}>
                                 <i className="fas fa-bars"></i>
                             </div>
                         </div>
