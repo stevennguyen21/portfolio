@@ -44,7 +44,7 @@ const Nav = () => {
                     <ul>
                         <li>
                             <a href="#">
-                                <i className="fab fa-twitter" alt="twitter"></i>
+                                <i className="fas fa-file" alt="resume"></i>
                             </a>
                         </li>
                         <li>
@@ -84,8 +84,8 @@ const Nav = () => {
                 <div className="social-header">
                     <ul>
                         <li>
-                            <a href="#">
-                                <i className="fab fa-twitter" alt="twitter"></i>
+                            <a href="https://stevennguyenresume.s3-us-west-2.amazonaws.com/Steven+Nguyen_Resume.pdf">
+                                <i className="fas fa-file" alt="resume"></i>
                             </a>
                         </li>
                         <li>
