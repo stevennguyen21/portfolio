@@ -111,6 +111,10 @@ header {
 .about {
     position: relative;
     .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         .download_resume {
             background: $primary-color;
             color: #fff;
@@ -122,6 +126,7 @@ header {
             transition: all 0.3s ease;
         }
         .download_resume:hover {
+            
             color: $primary-color;
             background: none;
         }
@@ -196,6 +201,20 @@ header {
     background: #F7F7F7;
 }
 
+.portfolio-header {
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.project {
+    a {
+        text-decoration: none;
+    }
+}
+
 // .project {
 //     height: 20em;
 //     margin-top: 1em;
@@ -206,6 +225,19 @@ header {
     margin-bottom: 2em;
     */
 
+// Contact
+
+.contact {
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+
+    .title {
+        text-align: center;
+    }
+
+
+
+}
 
 // footer
 
@@ -382,6 +414,10 @@ header {
         ul {
             i {
                 color: white;
+            }
+
+            i:hover {
+                color: $secondary-color;
             }
         }
     }

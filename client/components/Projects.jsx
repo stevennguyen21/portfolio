@@ -1,11 +1,15 @@
 import React from 'react';
 import img from '../images/chess.png';
 import vibeify from '../images/vibeify.gif';
-import reviews from '../images/reviews.gif';
+import reviews from '../images/reviews.png';
+import dateSelection from '../images/dateSelection.gif';
 
 const Projects = () => {
     return (
         <section className="portfolio">
+            <div className="portfolio-header">
+                Software Applications
+            </div>
 
             <div className="portfolio-container transition3">
                 <div className="portfolio-left">
@@ -72,7 +76,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <a href='#'>
-                    <img className="project" src={reviews} alt="reviews" />
+                    <img className="project" src={dateSelection} alt="reviews" />
                 </a>
             </div>
 

@@ -3,6 +3,15 @@ import React, { useState, useEffect } from 'react';
 const Nav = () => {
     const [sticky, setSticky] = useState(false);
     const [isActive, setActive] = useState(false);
+    const [mobileView, setMobileView] = useState(false);
+
+    const handleResize = () => {
+        if (window.innerWidth <= 960) {
+            setMobileView(true);
+        } else {
+            setMobileView(false);
+        }
+    }
 
     const listenScrollEvent = (e) => {
         if (window.scrollY > 700) {
@@ -16,8 +25,31 @@ const Nav = () => {
         setActive(!isActive);
     }
 
+    const handleScroll = (top) => {
+        if (isActive) {
+            setActive(!isActive);
+        }
+        if (mobileView) {
+            window.scrollTo({
+                top: top + 100,
+                left: 0,
+                behavior: 'smooth'
+            })
+        } else {
+            window.scrollTo({
+                top: top,
+                left: 0,
+                behavior: 'smooth'
+            })
+        }
+    }
+
+
     useEffect(() => {
+        handleResize();
+        window.addEventListener('resize', handleResize);
         window.addEventListener('scroll', listenScrollEvent);
+        
     })
 
 
@@ -29,9 +61,9 @@ const Nav = () => {
                         <div className="max-width">
                             <div className="logo">Steven Nguyen</div>
                             <ul className={`menu ${isActive ? 'active' : ''}`}>
-                                <li><a href="#">About Me</a></li>
-                                <li><a href="#">My Work</a></li>
-                                <li><a href="#">Contact Me</a></li>
+                                <li><a onClick={() => handleScroll(700)}>About Me</a></li>
+                                <li><a onClick={() => handleScroll(1400)}>My Work</a></li>
+                                <li><a href="mailto:steeven.nguyen1102@gmail.com">Contact Me</a></li>
                             </ul>
                             <div className="menu-btn" onClick={handleToggle}>
                                 <i className="fas fa-bars"></i>
@@ -70,9 +102,9 @@ const Nav = () => {
                         <div className="max-width">
                             <div className="logo">Steven Nguyen</div>
                             <ul className={`menu ${isActive ? 'active' : ''}`}>
-                                <li><a href="#">About Me</a></li>
-                                <li><a href="#">My Work</a></li>
-                                <li><a href="#">Contact Me</a></li>
+                                <li><a onClick={() => handleScroll(700)}>About Me</a></li>
+                                <li><a onClick={() => handleScroll(1300)}>My Work</a></li>
+                                <li><a href="mailto:steeven.nguyen1102@gmail.com">Contact Me</a></li>
                             </ul>
                             <div className="menu-btn" onClick={handleToggle}>
                                 <i className="fas fa-bars"></i>
