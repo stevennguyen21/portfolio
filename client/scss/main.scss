@@ -97,6 +97,8 @@ header {
     display: grid;
     text-align: center;
     padding: 4em;
+    font-size: 2em;
+
 }
 
 .meet {
@@ -124,6 +126,26 @@ header {
             background: none;
         }
 
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32vw;
+        height: auto;
+        padding: 15px;
+
+        .headshot {
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            width: 25vw;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.55);
+            z-index: -10;
+        }
     }
 }
 
@@ -263,7 +285,7 @@ header {
         color: white;
         cursor: pointer;
         font-size: 2em;
-        z-index: 4;
+        z-index: 10;
         padding-left: 75px;
     }
 
@@ -294,6 +316,12 @@ header {
     .portfolio img {
         max-width: 400px;
     }
+
+    .about {
+        .right {
+            display: none;
+        }
+    }
 }
 
 @media only screen and (min-width: 1050px) {
@@ -318,6 +346,7 @@ header {
 
     .social-header {
         padding: 2em 4em 2em 0;
+        z-index: 10;
         
     }
 

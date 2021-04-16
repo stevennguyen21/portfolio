@@ -1,4 +1,5 @@
 import React from 'react';
+import profile from '../images/profile.jpeg';
 
 const About = () => {
     return (
@@ -11,7 +12,9 @@ const About = () => {
                     <a href="https://stevennguyenresume.s3-us-west-2.amazonaws.com/Steven+Nguyen_Resume.pdf" className="download_resume">Download Resume</a>
                 </div>
             </div>
-            {/* <img className="right transition2"> where the pic will be */}
+            <div className="right">
+                <img className="headshot" src={profile} alt="headshot of Steven Nguyen" loading="lazy" />
+            </div>
         </section>
     )
 }
