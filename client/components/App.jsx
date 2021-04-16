@@ -4,6 +4,7 @@ import Nav from './Nav.jsx';
 import Hero from './Hero.jsx';
 import About from './About.jsx';
 import Projects from './Projects.jsx';
+import Footer from './Footer.jsx';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
             <Hero />
             <About />
             <Projects />
+            <Footer />
         </Router>
     )
 }

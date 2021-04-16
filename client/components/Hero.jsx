@@ -4,12 +4,9 @@ const Hero = () => {
     return (
         <div className="hero">
             <div className="content">
-                <h1>Beautifully Crafted Web Experiences</h1>
+                <h1>Hi, I'm Steven Nguyen</h1>
                 <div className="meet">
-                    <span>
-
-                    </span>
-                    <p>Meet Steven Nguyen</p>
+                    <p>I am a fullstack software engineer</p>
                 </div>
             </div>
             <svg className="hero-design" xmlns="http://www.w3.org/2000/svg" width="686" height="688" viewBox="0 0 686 688">

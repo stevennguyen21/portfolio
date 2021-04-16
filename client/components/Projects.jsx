@@ -17,7 +17,7 @@ const Projects = () => {
                                 github.com/stevennguyen21/chess
                             </a>
                         </p>
-                        <p className="featured-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum dicta atque sed animi dolorum eos cum exercitationem minima aut quod ipsum eaque accusantium culpa, impedit qui delectus non fuga!</p>
+                        <p className="featured-desc">A recreation of chess with multiplayer functionality using web sockets</p>
                     </div>
                 </div>
                 <a href='#'>
@@ -34,11 +34,28 @@ const Projects = () => {
                                 github.com/stevennguyen21/Vibe-ify
                             </a>
                         </p>
-                        <p className="featured-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum dicta atque sed animi dolorum eos cum exercitationem minima aut quod ipsum eaque accusantium culpa, impedit qui delectus non fuga!</p>
+                        <p className="featured-desc">Application for users to fine tune their Spotify recommendations based on various parameters such as mood, tempo, energy, etc.</p>
                     </div>
                 </div>
                 <a href='#'>
                     <img className="project" src={vibeify} alt="vibeify" />
+                </a>
+            </div>
+            <div className="portfolio-container transition3">
+                <div className="portfolio-left">
+                    <div className="inner">
+                        <p className="subtitle">HomeStay Hotline</p>
+
+                        <p className="featured-title">
+                            <a href="https://www.github.com/HomeStay-Hotline/reservations-service">
+                                github.com/HomeStay-Hotline/reservations-service
+                            </a>
+                        </p>
+                        <p className="featured-desc">Service oriented back-end architecture calendar booking component able to handle large web traffic</p>
+                    </div>
+                </div>
+                <a href='#'>
+                    <img className="project" src={reviews} alt="reviews" />
                 </a>
             </div>
             <div className="portfolio-container transition3">
@@ -51,7 +68,7 @@ const Projects = () => {
                                 github.com/Home2Go/reviews-service
                             </a>
                         </p>
-                        <p className="featured-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum dicta atque sed animi dolorum eos cum exercitationem minima aut quod ipsum eaque accusantium culpa, impedit qui delectus non fuga!</p>
+                        <p className="featured-desc">Open-source accomadation booking service made with test driven development using Jest and Enzyme</p>
                     </div>
                 </div>
                 <a href='#'>
