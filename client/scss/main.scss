@@ -481,20 +481,23 @@ header {
     }
 }
 
-// @media only screen and (min-width: 1550px) {
-//     header {
-//         padding: 2em 2em 2em 20em;
-//     }
+@media only screen and (min-width: 1550px) {
+    .hero {
+        height: 80vh;
+    }
+    header {
+        padding: 2em 2em 2em 20em;
+    }
 
-//     .social-header {
-//         padding: 2em 20em 2em 0;
-//     }
+    .social-header {
+        padding: 2em 20em 2em 0;
+    }
 
-//     section {
-//         padding: 6em 20em 4em 20em;
-//     }
+    section {
+        padding: 6em 20em 4em 20em;
+    }
 
-//     .hero .content {
-//         padding: 9em 20em 6em 20em;
-//     }
-// }
+    .hero .content {
+        padding: 9em 20em 6em 20em;
+    }
+}
